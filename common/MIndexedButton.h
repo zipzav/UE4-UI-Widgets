@@ -22,10 +22,10 @@ public:
 	virtual TSharedRef<SWidget> RebuildWidget();
 
 	UFUNCTION()
-	int GetButtonIndex() { return buttonIndex; }
+	int GetButtonIndex() const { return buttonIndex; }
 
 	UFUNCTION()
-	void SetButtonIndex(int index ) { buttonIndex = index; }
+	void SetButtonIndex( int index ) { buttonIndex = index; }
 
 private:
 	FReply IndexedButtonHandledClick();
